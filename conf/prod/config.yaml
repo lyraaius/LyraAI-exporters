@@ -1,0 +1,47 @@
+hertz:
+  address: ":8080"
+  https_address: ":443"
+  enable_https: false
+  enable_pprof: true
+  enable_gzip: true
+  enable_access_log: true
+  log_level: info
+  log_file_name: "log/hertz-%v.log"
+  enable_rev_proxy: true
+
+contract:
+  - name: "Bitlayer Testnet"
+    address: "0x49639504df7cd8f9f2812614da64ed3071d3823e"
+    rpc_url: "https://testnet-rpc.bitlayer.org"
+    type: 0
+  - name: "Bitlayer Mainnet"
+    address: "0xf33a5a51456200cc570abafa83eb0452812336ff"
+    rpc_url: "https://rpc.bitlayer.org"
+    type: 0
+  - name: "Movement EVM Testnet"
+    address: "0x5bbbf0475605d32c1c40c1f08da4b79e76ac038f"
+    rpc_url: "https://mevm.devnet.imola.movementnetwork.xyz"
+    type: 0
+  - name: "Movement Aptos Testnet"
+    rpc_url: "https://aptos.testnet.porto.movementlabs.xyz/v1"
+    backup_rpc_url:
+      - "https://testnet.porto.movementnetwork.xyz/v1"
+    type: 1
+    move_account: "0x21737c31a43334567c18a56a4061579b36cc07f5a3a3bb95d8572aa210e64de2"
+    move_module: "lyraAiXv4"
+  - name: "Binance Smart Chain Testnet"
+    address: "0xf0C23A2B852E4845B92d27b872CbC5E84d7380BB"
+    rpc_url: "https://bsc-testnet-rpc.publicnode.com"
+    type: 0
+  - name: "Binance Smart Chain"
+    address: "0xA07F71451eD702669E9e08d97BAd2124777eD612"
+    rpc_url: "https://rpc.ankr.com/bsc"
+    type: 0
+  - name: "Kaia Kairos Testnet"
+    address: "0x725da8E34204e4D2f98d9f68aF1Fbf5eA816c303"
+    rpc_url: "https://rpc.ankr.com/kaia_testnet"
+    type: 0
+  - name: "Kaia Mainnet"
+    address: "0x5C6A28569bB8588E25a67CAEce7914D585C897F9"
+    rpc_url: "https://rpc.ankr.com/kaia"
+    type: 0
